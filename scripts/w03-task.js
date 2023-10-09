@@ -12,7 +12,7 @@ function addNumbers(){
 }
 document.querySelector("#addNumbers").addEventListener("click", addNumbers);
 /* Function Expression - Subtract Numbers */
-let subtract= function (number1, number2){
+let subtract = function (number1, number2){
     return number1 - number2;
 }
 function subtractNumbers(){
