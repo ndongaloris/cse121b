@@ -53,7 +53,7 @@ const reset = function(){
 const getSongs = async(name) => {
     reset();
     let list = [];
-    const response = await fetch(`https://itunes.apple.com/search?entity=song&limit=100&term=${name}`)
+    const response = await fetch(`https://itunes.apple.com/search?entity=song&limit=150&term=${name}`)
     if (response.ok){
         const results = await response.json(); 
         for (let i = 0;i < results["results"].length; i++){
@@ -64,7 +64,7 @@ const getSongs = async(name) => {
             
         
             let image = document.createElement("img")
-            image.setAttribute("src","images/Note.png");
+            image.setAttribute("src","../images/Note.png");
         
             image.alt = "Music note";
         
