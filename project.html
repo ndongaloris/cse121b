@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/project.js" type="module" defer></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Project</title>
+</head>
+<body>
+    <nav>
+        <ul id="menu">
+            <li><a id="toggleMenu">&equiv;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="w01-task.html">W1 Task</a></li>
+            <li><a href="w03-task.html">W3 Task</a></li>
+            <li><a href="w04-task.html">W4 Task</a></li>
+            <li><a href="w05-task.html" class="active">W5 Task</a></li>
+            <li><a href="project.html">Project</a></li>
+        </ul>
+    </nav>
+    <main id="gridly">
+        <h1>What was it again!?</h1>
+        <select id="sortBy" title="Choose a data filter.">
+            <option value="" disabled selected>Choose a data filter</option>
+            <option value="song">Songs</option>
+            <option value="album">Album</option>
+        </select>
+        <input type="text" value="" id="name">
+        <button id="search">Search</button>
+    
+    <div id="songs">
+    </div>
+</main>
+<footer>
+    &copy;<span id="year"></span> | Loris Jared Ndonga | CSE 121b
+</footer>
+</body>
+</html>
